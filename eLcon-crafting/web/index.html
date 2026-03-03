@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eLcon Crafting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="panel">
+      <div class="panel-header">
+        <h1 id="stationTitle">Crafting</h1>
+        <button id="closeBtn" class="btn-close">X</button>
+      </div>
+      <div id="recipeList" class="recipe-list"></div>
+    </div>
+  </div>
+
+  <template id="recipeTemplate">
+    <div class="recipe-card">
+      <div class="recipe-head">
+        <h2 class="recipe-name"></h2>
+        <span class="recipe-time"></span>
+      </div>
+      <p class="recipe-description"></p>
+      <div class="recipe-io">
+        <div>
+          <h3>Ingredients</h3>
+          <ul class="ingredients"></ul>
+        </div>
+        <div>
+          <h3>Outputs</h3>
+          <ul class="outputs"></ul>
+        </div>
+      </div>
+      <div class="recipe-actions">
+        <button class="craft-btn" data-qty="1">Craft x1</button>
+        <button class="craft-btn" data-qty="5">Craft x5</button>
+        <button class="craft-btn" data-qty="10">Craft x10</button>
+      </div>
+      <p class="status"></p>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
